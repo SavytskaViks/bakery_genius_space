@@ -1,0 +1,66 @@
+:root {
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+  --color-text-primary-dark: #31261a;
+  --color-text-primary-light: #faf4ea;
+}
+
+body {
+  color: var(--color-text-primary-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  width: 238px;
+  height: 59px;
+  background-color: var(--color-brand-light);
+  color: var(--color-text-primary-light);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-light);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+.header__menu-item {
+  font-size: 18px;
+  color: var(--color-text-primary-light);
+}
+
+.header__menu-item:hover {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+.hero-section__title {
+  color: var(--color-text-primary-light);
+  font-size: 128px;
+  font-weight: 900;
+}
+
+.hero-section__title .accent {
+  color: var(--color-brand-light);
+}
+
+.traditions-section__quality-list {
+  background-color: var(--color-brand-light);
+  color: var(--color-text-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section__title {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.section__title .accent {
+  color: var(--color-brand-dark);
+}
