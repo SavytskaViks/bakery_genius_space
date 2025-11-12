@@ -9,151 +9,184 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <a href="./index.html">
-          <img class="header__logo" src="./images/logo.svg" alt="Логотип - Shop Bakery" />
-        </a>
-        <ul class="header__menu">
-          <li><a class="header__menu-item" href="#traditions-section">Наші традиції</a></li>
-          <li><a class="header__menu-item" href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a class="header__menu-item" href="#formats-section">Формати</a></li>
-          <li><a class="header__menu-item" href="#contact-section">Контакти</a></li>
-        </ul>
-      </nav>
-      <button class="button" type="button">Замовити дзвінок</button>
+      <div class="container">
+        <nav class="header__nav">
+          <a href="./index.html">
+            <img class="header__logo" src="./images/logo.svg" alt="Логотип - Shop Bakery" />
+          </a>
+          <ul class="header__menu">
+            <li><a class="menu-item" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="menu-item" href="#chefs-section">Шеф-кухарі</a></li>
+            <li><a class="menu-item" href="#formats-section">Формати</a></li>
+            <li><a class="menu-item" href="#contact-section">Контакти</a></li>
+          </ul>
+        </nav>
+        <button class="button" type="button">Замовити дзвінок</button>
+      </div>
     </header>
     <main>
       <section class="hero-section">
         <h1 class="hero-section__title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
 
-      <section class="traditions-section" id="traditions-section">
-        <ul class="traditions-section__quality-list">
-          <li>Великий попит на ринку</li>
-          <li>Доступні за бюджетом формати</li>
-          <li>Досвідчена управлінська команда</li>
-        </ul>
-        <h2 class="section__title">Новий формат традицій</h2>
-        <p>
-          <span lang="en">shop bakery</span>
-          — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність
-          інгредієнтів.
-        </p>
-        <p>
-          Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове</span>
-          . А ще у наших пекарень стильний дизайн та висока якість обслуговування!
-        </p>
-        <img src="./images/baker-man.jpg" alt="Чоловік пекар, який диться із посмішкою на хліб" />
+      <section>
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
+          <ul class="traditions-section__quality-list">
+            <li class="traditions-section__quality-item">Великий попит на ринку</li>
+            <li class="traditions-section__quality-item">Доступні за бюджетом формати</li>
+            <li class="traditions-section__quality-item">Досвідчена управлінська команда</li>
+          </ul>
+        </div>
       </section>
 
-      <section id="chefs-section">
-        <h2 class="section__title">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Настя</h3>
-              <p>Привіт, я Настя!</p>
-              <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-              <p>Я випічу для вас найсмачніщі вироби!</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Влад</h3>
-              <p>Привіт, я Влад!</p>
-              <p>
-                Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось
-                кожен раз з Вами через нашу випічку!
-              </p>
-              <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-            </article>
-          </li>
-        </ul>
+      <section class="traditions-section section" id="traditions-section">
+        <div class="container">
+          <h2 class="traditions-title section__title">Новий формат традицій</h2>
+          <p class="traditions-text">
+            <span class="accent uppercase" lang="en">shop bakery</span>
+            — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та
+            натуральність інгредієнтів.
+          </p>
+          <p class="traditions-text">
+            Ми працюємо як найвідоміші мережі—
+            <span class="accent">5 хвилин і замовлення готове</span>
+            . А ще у наших пекарень стильний дизайн та висока якість обслуговування!
+          </p>
+          <img src="./images/baker-man.jpg" alt="Чоловік пекар, який диться із посмішкою на хліб" />
+        </div>
       </section>
 
-      <section id="formats-section">
-        <h2 class="section__title">Формати</h2>
-        <ul>
-          <li>
-            <article>
-              <h4 lang="en">Walrus</h4>
-              <p>Площа: до 120 м2</p>
-              <p>Меню: розширене меню</p>
-              <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
-              <p>Посадкові місця: є</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 lang="en">Horseshoe</h4>
-              <p>Площа: до 25 м2</p>
-              <p>Меню: найпопулярніші позиції меню</p>
-              <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-              <p>Посадкові місця: відсутні</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 lang="en">Handlebar</h4>
-              <p>Площа: до 15 м2</p>
-              <p>Меню: найпопулярніші позиції меню</p>
-              <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-              <p>Посадкові місця: відсутні</p>
-            </article>
-          </li>
-        </ul>
+      <section class="section" id="chefs-section">
+        <div class="container">
+          <h2 class="chef-title section__title">
+            Наші найкращі <span class="accent">шеф-кухарі</span>
+          </h2>
+          <ul>
+            <li>
+              <article>
+                <h3 class="chefs-title">Настя</h3>
+                <p>Привіт, я Настя!</p>
+                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+                <p>Я випічу для вас найсмачніщі вироби!</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="chefs-title">Влад</h3>
+                <p>Привіт, я Влад!</p>
+                <p>
+                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми
+                  ділимось кожен раз з Вами через нашу випічку!
+                </p>
+                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section id="contact-section">
-        <h2 class="section__title">Приєднуйся до мережі пекарень</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1762546996457!5m2!1suk!2sua"
-          width="603"
-          height="595"
-          allowfullscreen=""
-          referrerpolicy="no-referrer-when-downgrade"
-          loading="lazy"
-        ></iframe>
+      <section class="section" id="formats-section">
+        <div class="container">
+          <h2 class="format-title section__title">Формати</h2>
+          <ul>
+            <li>
+              <article>
+                <h4 class="formats-title" lang="en">Walrus</h4>
+                <div class="formats-text">
+                  <p>Площа: до 120 м2</p>
+                  <p>Меню: розширене меню</p>
+                  <p>
+                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
+                  </p>
+                  <p>Посадкові місця: є</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4 class="formats-title" lang="en">Horseshoe</h4>
+                <div class="formats-text">
+                  <p>Площа: до 25 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4 class="formats-title" lang="en">Handlebar</h4>
+                <div class="formats-text">
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact-section">
+        <div class="container">
+          <h2 class="contact-title section__title">Приєднуйся до мережі пекарень</h2>
+          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1762546996457!5m2!1suk!2sua"
+            width="603"
+            height="595"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            loading="lazy"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer>
-      <nav class="nav">
-        <a href="./index.html">
-          <img src="./images/logo.svg" alt="Логотип - Shop Bakery" />
-        </a>
-        <ul>
-          <li><a href="#traditions-section">Наші традиції</a></li>
-          <li><a href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a href="#formats-section">Формати</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-          <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/qtZKvgRPx7eDrD7eA" target="_blank">
-              Україна, м. Київ, вул. Січових Стрільців 54
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- icon -->
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- icon -->
-            </a>
-          </li>
-        </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
-      </address>
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html">
+            <img src="./images/logo.svg" alt="Логотип - Shop Bakery" />
+          </a>
+          <ul>
+            <li><a class="menu-item" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="menu-item" href="#chefs-section">Шеф-кухарі</a></li>
+            <li><a class="menu-item" href="#formats-section">Формати</a></li>
+            <li><a class="menu-item" href="#contact-section">Контакти</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+            <li>
+              <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            </li>
+            <li>
+              <a
+                class="address-link"
+                href="https://maps.app.goo.gl/qtZKvgRPx7eDrD7eA"
+                target="_blank"
+              >
+                Україна, м. Київ, вул. Січових Стрільців 54
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- icon -->
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- icon -->
+              </a>
+            </li>
+          </ul>
+          <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
+          <p class="address-copyright">&copy; 2022 Дані захищені</p>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
