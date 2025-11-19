@@ -40,6 +40,7 @@
 
 body {
   color: var(--color-text-primary-dark);
+  background-color: var(--color-text-primary-light);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -48,6 +49,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -96,17 +98,53 @@ address {
   color: var(--color-brand-dark);
 }
 
+/* header section */
 .menu-item {
   color: var(--color-text-primary-light);
 }
 
 .menu-item:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* hero section */
 .hero-section {
   padding: 272px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  transform: scaleX(-1);
+  z-index: -1;
 }
 
 .hero-section__title {
@@ -120,18 +158,37 @@ address {
   color: var(--color-brand-light);
 }
 
-.traditions-section__quality-list {
+/* advantages section */
+.advantages-section {
   background-color: var(--color-brand-light);
-  color: var(--color-text-primary-light);
+  padding: 16px 0;
 }
 
-.traditions-section__quality-item {
+.advantages__quality-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.advantages__quality-item {
+  color: var(--color-text-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
 
+/* traditions section */
 .traditions-section {
   padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions__text-container {
+  max-width: 710px;
 }
 
 .traditions-title {
@@ -140,8 +197,12 @@ address {
 
 .section__title {
   font-size: 64px;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.3;
+}
+
+.section__title.centered {
+  text-align: center;
 }
 
 .section__title .accent {
@@ -157,14 +218,54 @@ address {
   text-transform: uppercase;
 }
 
+.traditions-text:last-child {
+  max-width: 330px;
+}
+
+/* chefs section */
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-text-primary-light),
+    -16px 16px 0 2px rgba(161, 130, 104, 1);
+}
+
 .chef-title {
-  margin-bottom: 80px;
+  max-width: 520px;
+  margin: 0 auto 80px;
+}
+
+.chef-title::before,
+.chef-title::after {
+  content: '';
+  display: block;
+  width: 352px;
+  border: 2px solid rgba(207, 207, 188, 1);
 }
 
 .chefs-title {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+/* formats section */
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+
+.format-card {
+  border: 1px solid lightblue;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 350px;
+  height: 444px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-text-primary-dark) 100%
+  );
 }
 
 .format-title {
@@ -181,6 +282,7 @@ address {
   font-weight: 300;
 }
 
+/* contact section */
 .contact-title {
   margin-bottom: 16px;
 }
@@ -198,4 +300,13 @@ address {
 .address-copyright {
   font-size: 14px;
   color: #a18268;
+}
+
+/* footer section */
+.footer {
+  background-image: url(../images/footer-background.png);
+  background-color: var(--color-text-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
